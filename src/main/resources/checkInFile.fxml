@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1550.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckInFileController">
+   <children>
+      <Pane layoutX="-12.0" layoutY="-13.0" prefHeight="775.0" prefWidth="612.0" style="-fx-background-color: #e8574d;">
+         <children>
+            <ImageView fitHeight="347.0" fitWidth="495.0" layoutX="59.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/PinClipart.com_blood-spatter-clip-art_3185194.png" />
+               </image></ImageView>
+            <ImageView fitHeight="109.0" fitWidth="116.0" layoutX="445.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/transfuzii_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="109.0" fitWidth="116.0" layoutX="252.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/transfuzii3_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="109.0" fitWidth="116.0" layoutX="59.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/transfuzii2_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="597.0" layoutY="-9.0" prefHeight="770.0" prefWidth="956.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label layoutX="52.0" layoutY="33.0" prefHeight="98.0" prefWidth="400.0" text="Check In Form">
+               <font>
+                  <Font name="Cooper Black" size="44.0" />
+               </font>
+            </Label>
+            <Pane layoutX="40.0" layoutY="154.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="369.0" text="Did you drink alcohol in the last 48 hours?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="alcoholChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="238.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="369.0" text="Did you get a tattoo in the past 6 months?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="tattooChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="320.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="369.0" text="Do you take treatment?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="treatmentChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="404.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="369.0" text="Do you have any chronic diseases?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="chronicChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="488.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="369.0" text="Do you presently have COVID-19 symptoms?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="covid19ChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="572.0" prefHeight="50.0" prefWidth="842.0">
+               <children>
+                  <Label layoutX="29.0" layoutY="15.0" prefHeight="27.0" prefWidth="435.0" text="Have you ever been rejected at a past donation?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="rejectedChoiceBox" layoutX="561.0" layoutY="5.0" prefHeight="35.0" prefWidth="268.0" />
+               </children>
+            </Pane>
+            <Button fx:id="submitButton" layoutX="402.0" layoutY="685.0" mnemonicParsing="false" onAction="#check" prefHeight="35.0" prefWidth="153.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Submit" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="651.0" prefHeight="25.0" prefWidth="504.0" textAlignment="CENTER" textFill="#d50404">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="nextButton" layoutX="763.0" layoutY="673.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="153.0" style="-fx-background-color: #3283a8;" text="Next" visible="false">
+               <font>
+                  <Font name="Bodoni MT" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="555.0" layoutY="86.0" prefHeight="27.0" prefWidth="220.0" text="Please enter your weight:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="weightTxt" layoutX="775.0" layoutY="82.0" prefHeight="35.0" prefWidth="99.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

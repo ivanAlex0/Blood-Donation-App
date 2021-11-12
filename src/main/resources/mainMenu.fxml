@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+   <children>
+      <Button fx:id="btnBack" layoutX="51.0" layoutY="45.0" mnemonicParsing="false" onAction="#goBackToSignUp" prefHeight="49.0" prefWidth="150.0" style="-fx-background-radius: 0; -fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="Back" AnchorPane.bottomAnchor="660.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="1345.0" AnchorPane.topAnchor="49.0">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHistory" layoutX="831.0" layoutY="237.0" mnemonicParsing="false" onAction="#goToAppointmentsHistory" prefHeight="232.0" prefWidth="451.0" style="-fx-background-radius: 10; -fx-background-color: #cf5b38;" text="Appointments History" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="829.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="48.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnNew" alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="237.0" mnemonicParsing="false" onAction="#goToNewAppointment" prefHeight="232.0" prefWidth="451.0" style="-fx-background-radius: 10; -fx-background-color: #d9472e;" text="New Appointment" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="829.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="48.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

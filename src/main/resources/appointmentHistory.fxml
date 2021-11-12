@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1550.0" style="-fx-background-color: #e8574d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppointmentHistoryController">
+   <children>
+      <ListView fx:id="listView" layoutX="32.0" layoutY="63.0" prefHeight="682.0" prefWidth="1490.0" />
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="46.0" prefWidth="102.0" text="Back">
+         <font>
+            <Font name="Bodoni MT" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
